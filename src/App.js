@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css'
 import Header from './components/Header';
 import Nav from './components/Nav';
+import About from './components/About'
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <nav>
       <Nav></Nav>
       </nav>
+      <main>
+      <About></About>
+      </main>
     </div>
   );
 }
