@@ -19,13 +19,13 @@ function App() {
       <header>
       <Header></Header>
       </header>
-      <Nav>
+      <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-      </Nav>
+      ></Nav>
       <main>
       <About></About>
       </main>
