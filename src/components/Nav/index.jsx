@@ -1,41 +1,36 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from 'react';
+import '../../App.css';
 
-function Nav(props) {
-    const {
-        categories = [],
-        setCurrentCategory,
-        contactSelected,
-        currentCategory,
-        setContactSelected,
-        } = props;
-    
-        useEffect(() => {
-            document.title = capitalizeFirstLetter(currentCategory.name);
-        }, [currentCategory]);
-
+function Nav() {
+    function handleClick() {
+        console.log('click happened');
+    } 
     return(
         <nav>
-            <ul className="flex-row">
-                    {categories.map((category) => (
-                <li className={`mx-1 ${
-                    currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-                key={category.name}
-                >
-                <span onClick={() => {
-                    setCurrentCategory(category);
-                    setContactSelected(false);
-                }}
-                >
-                    {capitalizeFirstLetter(category.name)}
-                </span>
-                </li>
-            ))}
-            <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                    <span onClick={() => setContactSelected(true)}>Contact</span>
-            </li>
-        </ul>
+            <div className="container">
+            <ul className="row">
+                <ul className="mx-2 col-sm">
+                    <a href="#about" onClick={handleClick}>
+                    About me
+                    </a>
+                </ul>
+                <ul className="mx-2 col-sm">
+                    <a href="#portfolio" onClick={handleClick}>
+                    Portfolio
+                    </a>
+                </ul>
+                <ul className="mx-2 col-sm">
+                    <a href="#contact" onClick={handleClick}>
+                    Contact
+                    </a>
+                </ul>
+                <ul className="mx-2 col-sm">
+                    <a href="#resume" onClick={handleClick}>
+                    Resume
+                    </a>
+                </ul>
+            </ul>
+            </div>
         </nav>
     )
 }
