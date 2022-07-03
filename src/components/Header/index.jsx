@@ -4,8 +4,8 @@ function Header() {
     return (
     <header>
     <h2>
-        <a data-testid="link" href="/">
-            <p>Haley Telega's Portfolio</p>
+        <a href="/">
+            <h4>Haley Telega's Portfolio</h4>
         </a>
     </h2>
     </header>
