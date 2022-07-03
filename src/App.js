@@ -5,9 +5,8 @@ import About from './components/About'
 
 function App() {
   const [categories] = useState([
-    {
-      name: 'Portfolio'
-    },
+    { name: 'About Me'},
+    { name: 'Portfolio'},
     { name: 'Resume'},
   ]);
 
