@@ -4,7 +4,7 @@ import haley from '../../assets/cover/haley.jpg'
 function About() {
     return (
     <section className="my-5">
-        <img src={haley} className="my-2" style={{ width: "100%" }} alt="cover" />
+        <img src={haley} className="my-2" style={{ width: "20%" }} alt="cover" />
         <h1 id="about">Haley Telega</h1>
         <div className="my-2">
         <p>
