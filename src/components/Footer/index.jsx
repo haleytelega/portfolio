@@ -1,10 +1,20 @@
 import React from 'react';
 
-function Footer() {
+function Footer () {
     return (
     <footer>
-    <h2 className="footer">
-    </h2>
+    <div>
+        <div className="footer">
+        <a href="https://github.com/haleytelega?page=1&tab=repositories" target="_blank" rel="noreferrer">
+            <img style={{ width: "5%" }}
+            src={require(`../../assets/footer/0.jpg`).default}
+            alt={'GitHub logo'}
+            className="img-thumbnail mx-1"
+            key={'GitHub logo'}
+            />
+            </a>
+        </div>
+    </div>
     </footer>
     );
 }
