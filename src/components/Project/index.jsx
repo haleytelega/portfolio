@@ -1,26 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Project () {
+const ProjectList = ({ category }) => {
+    // const [isModalOpen, setIsModalOpen] = useState(false);
+    // const [currentPhoto, setCurrentPhoto] = useState();
+
+    const [photos] = useState([
+    {
+        name: 'Weather Dashboard',
+        category: 'portfolio'
+    }
+    ]);
+
     const currentPhotos = photos.filter(photo => photo.category === category);
 
-    const toggleModal = (image, i) => {
-        setCurrentPhoto({ ...image, index: i });
-        setIsModalOpen(!isModalOpen);
-    };
+    // const toggleModal = (image, i) => {
+    //     setCurrentPhoto({ ...image, index: i });
+    //     setIsModalOpen(!isModalOpen);
+    // };
 
     return (
-        <div className="flex-row">
-        {currentPhotos.map((image, i) => (
-        <img
-            src={require(`../../assets/small/${category}/${i}.jpg`).default}
-            alt={image.name}
-            className="img-thumbnail mx-1"
-            onClick={() => toggleModal(image, i)}
-            key={image.name}
-        />
+        <div>
+            <div className="flex-row">
+                {currentPhotos.map((image, i) => (
+                <img
+                src={require(`../../assets/${category}/${i}.jpg`).default}
+                alt={image.name}
+                className="img-thumbnail mx-1"
+                key={image.name}
+                />
             ))}
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Project
+export default ProjectList;
