@@ -8,8 +8,7 @@ import Contact from './components/Contact';
 function App() {
   const [categories] = useState([
     { name: 'About Me'},
-    { name: 'portfolio'},
-    { name: 'Resume'},
+    { name: 'portfolio'}
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
