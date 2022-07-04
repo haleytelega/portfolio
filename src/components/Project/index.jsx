@@ -8,6 +8,26 @@ const ProjectList = ({ category }) => {
     {
         name: 'Weather Dashboard',
         category: 'portfolio'
+    },
+    {
+        name: 'Workday Scheduler',
+        category: 'portfolio'
+    },
+    {
+        name: 'Password Generator',
+        category: 'portfolio'
+    },
+    {
+        name: 'Note Taker',
+        category: 'portfolio'
+    },
+    {
+        name: 'Employee Tracker',
+        category: 'portfolio'
+    },
+    {
+        name: 'Tech Blog',
+        category: 'portfolio'
     }
     ]);
 
@@ -22,7 +42,7 @@ const ProjectList = ({ category }) => {
         <div>
             <div className="flex-row">
                 {currentPhotos.map((image, i) => (
-                <img
+                <img style={{ width: "20%" }}
                 src={require(`../../assets/${category}/${i}.jpg`).default}
                 alt={image.name}
                 className="img-thumbnail mx-1"
