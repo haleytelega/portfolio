@@ -31,8 +31,8 @@ const ProjectList = ({ category }) => {
 
     const currentPhotos = photos.filter(photo => photo.category === category);
 
-    const [hover, setHover] = useState(false); // initial false
 
+    const [hover, setHover] = useState(false); // initial false
 
     const onHover = (e) => {
     e.preventDefault();
@@ -47,7 +47,7 @@ const ProjectList = ({ category }) => {
 
     return (
         <div>
-            <div className="flex-row">
+            <div className="flex-row example">
             {hover && <p className={hover}>hovered</p>}
                 {currentPhotos.map((image, i) => (
                 <img style={{ width: "20%" }}
