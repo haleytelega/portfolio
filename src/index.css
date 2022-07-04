@@ -88,8 +88,16 @@ a {
   font-weight: bold;
 }
 
+.resume {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
 a:hover {
   text-decoration: none;
+  color: black;
 }
 
 header {
@@ -106,6 +114,14 @@ header:hover {
   color: black;
 }
 
+.header{
+  text-align: center;
+}
+
+.footer {
+  border-top-style: solid;
+  background: var(--primary);
+}
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -169,6 +185,7 @@ nav li {
 .nav {
   text-decoration: none;
   color: black;
+  text-align: center;
 }
 
 textarea {
@@ -303,5 +320,5 @@ a {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: var(--primary);
 }
