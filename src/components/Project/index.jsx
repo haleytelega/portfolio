@@ -4,8 +4,7 @@ const ProjectList = ({ category }) => {
     const [photos] = useState([
     {
         name: 'Weather Dashboard',
-        category: 'portfolio',
-        description: 'Weather Dashboard'
+        category: 'portfolio'
     },
     {
         name: 'Workday Scheduler',
