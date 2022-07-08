@@ -278,12 +278,12 @@ textarea {
 
 .portfolio_container {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio_container-image {
   display: block;
-  width: 100%;
+  width: 20%;
   height: auto;
 }
 
@@ -291,14 +291,10 @@ textarea {
   opacity: 1;
 }
 
-/* .example {
-  position: relative;
-} */
-
 .portfolio_container-info {
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 20%;
   opacity: 0;
   background-color: #008CBA;
 }
