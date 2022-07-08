@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProjectNames from '../ProjectNames';
 
 const ProjectList = ({ category }) => {
     const [photos] = useState([
@@ -30,33 +31,12 @@ const ProjectList = ({ category }) => {
 
     const currentPhotos = photos.filter(photo => photo.category === category);
 
-
-    const [hover, setHover] = useState(false); // initial false
-
-    const onHover = (e) => {
-    e.preventDefault();
-    setHover(true); // turn true
-    console.log("hovered");
-    };
-
-    const onHoverOver = (e) => {
-    e.preventDefault(); // turn false
-    setHover(false);
-    };
-
     return (
         <div>
             <div className="flex-row example">
-            {hover && <p className={hover}>hovered</p>}
                 {currentPhotos.map((image, i) => (
-                <img style={{ width: "20%" }}
-                src={require(`../../assets/${category}/${i}.jpg`).default}
-                onMouseEnter={(e) => onHover(e)}
-                onMouseLeave={(e) => onHoverOver(e)}
-                alt={image.name}
-                className="img-thumbnail mx-1"
-                key={image.name}
-                />
+                    <ProjectNames key={image.name} 
+                    img={image} i={i} category={category} / >
             ))}
             </div>
         </div>
