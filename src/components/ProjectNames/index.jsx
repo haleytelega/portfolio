@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, Link } from 'react';
 
-const ProjectNames = ({ img, i, category }) => {
+const ProjectNames = ({ img, i, category, repo }) => {
 
     const [hover, setHover] = useState(false); // initial false
 
@@ -25,7 +25,8 @@ const ProjectNames = ({ img, i, category }) => {
                 className="img-thumbnail mx-1"
                 />
                 {hover &&
-                <p>{img.name}</p>}
+                <p>{img.name}</p> &&
+                <Link to={{ pathname: img.repo }} target="_blank" />}
                 </>
     )
 }
