@@ -146,6 +146,9 @@ button[disabled] {
 
 img {
   max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 span[role='img'] {
@@ -283,6 +286,18 @@ textarea {
 .img-thumbnail:hover {
   filter: blur(4px);
   transition: 0.2s ease-in-out;
+}
+
+.example {
+  position: relative;
+}
+
+.example2 {
+  position: absolute;
+}
+
+.text {
+  position: absolute;
 }
 
 button {

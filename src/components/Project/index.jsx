@@ -39,7 +39,7 @@ const ProjectList = ({ category }) => {
             <div className="flex-row example">
                 {currentPhotos.map((image, i) => (
                     <ProjectNames key={image.name} 
-                    img={image} i={i} category={category} repo={repo} / >
+                    img={image} i={i} category={category} / >
             ))}
             </div>
         </div>
