@@ -1,33 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const ProjectNames = ({ img, i, category }) => {
-
-    const [hover, setHover] = useState(false); // initial false
-
-    const onHover = (e) => {
-    e.preventDefault();
-    setHover(true); // turn true
-    console.log("hovered");
-    };
-
-    const onHoverOver = (e) => {
-    e.preventDefault(); // turn false
-    setHover(false);
-    };
     
     return (
         <>
-        <img style={{ width: "20%" }}
+        <div className="portfolio_container">
+            <div className="portfolio_container-info">
+                <p className="portfolio_container-name">{img.name}</p>
+            </div>
+            <img
                 src={require(`../../assets/${category}/${i}.jpg`).default}
-                onMouseEnter={(e) => onHover(e)}
-                onMouseLeave={(e) => onHoverOver(e)}
                 alt={img.name}
-                className="img-thumbnail mx-1"
-                />
-                {hover &&
-                <div className="exmaple2">
-                <p className="text">{img.name}</p>
-                </div>}
+                className="portfolio_container-image"
+            />
+        </div>
             </>
     )
 }

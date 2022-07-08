@@ -276,28 +276,43 @@ textarea {
   text-align: center;
 }
 
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
-.img-thumbnail:hover {
-  filter: blur(4px);
-  transition: 0.2s ease-in-out;
-}
-
-.example {
+.portfolio_container {
   position: relative;
+  width: 50%;
 }
 
-.example2 {
-  position: absolute;
+.portfolio_container-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.text {
+.portfolio_container:hover .portfolio_container-info{
+  opacity: 1;
+}
+
+/* .example {
+  position: relative;
+} */
+
+.portfolio_container-info {
   position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #008CBA;
+}
+
+.portfolio_container-name {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 button {

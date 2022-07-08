@@ -36,7 +36,7 @@ const ProjectList = ({ category }) => {
 
     return (
         <div>
-            <div className="flex-row example">
+            <div className="flex-row">
                 {currentPhotos.map((image, i) => (
                     <ProjectNames key={image.name} 
                     img={image} i={i} category={category} / >
