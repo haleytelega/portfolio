@@ -311,6 +311,10 @@ textarea {
   text-align: center;
 }
 
+.portfolio_container-repo {
+  color: white;
+}
+
 button {
   background: var(--primary);
   border: 0;
