@@ -296,11 +296,11 @@ textarea {
   height: 100%;
   width: 20%;
   opacity: 0;
-  background-color: #008CBA;
+  background-color: black;
 }
 
 .portfolio_container-name {
-  color: black;
+  color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;

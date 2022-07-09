@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 import React, { useState } from 'react';
 import ProjectNames from '../ProjectNames';
 
@@ -39,7 +39,7 @@ const ProjectList = ({ category }) => {
             <div className="flex-row">
                 {currentPhotos.map((image, i) => (
                     <ProjectNames key={image.name} 
-                    img={image} i={i} category={category} / >
+                    img={image} i={i} category={category} repo={repo} / >
             ))}
             </div>
         </div>
