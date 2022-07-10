@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import ProjectNames from '../ProjectNames';
 
-const ProjectList = ({ category, repo }) => {
+const ProjectList = ({ category, repo, link }) => {
     const [photos] = useState([
     {
         name: 'Weather Dashboard',
@@ -32,14 +32,14 @@ const ProjectList = ({ category, repo }) => {
     }
     ]);
 
-    const currentPhotos = photos.filter(photo => photo.category === category && photo.repo === repo);
+    const currentPhotos = photos.filter(photo => photo.category === category && photo.repo === repo && photo.link === link);
 
     return (
         <div>
             <div className="flex-row">
                 {currentPhotos.map((image, i, repo ) => (
                     <ProjectNames key={image.name} 
-                    img={image} i={i} category={category} repo={repo} / >
+                    img={image} i={i} category={category} repo={repo} link={link} / >
             ))}
             </div>
         </div>
