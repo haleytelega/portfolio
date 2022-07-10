@@ -11,28 +11,28 @@ const ProjectList = ({ category, link }) => {
     },
     {
         name: 'Workday Scheduler',
-        category: 'portfolio',
-        link:'https://haleytelega.github.io/Work-Day-Scheduler-/'
+        category: 'portfolio'
+        // link:'https://haleytelega.github.io/Work-Day-Scheduler-/'
     },
     {
         name: 'Password Generator',
-        category: 'portfolio',
-        link: 'https://haleytelega.github.io/Password-Generator/'
+        category: 'portfolio'
+        // link: 'https://haleytelega.github.io/Password-Generator/'
     },
     {
         name: 'Note Taker',
-        category: 'portfolio',
-        link: 'https://ht-note-taker.herokuapp.com/'
+        category: 'portfolio'
+        // link: 'https://ht-note-taker.herokuapp.com/'
     },
     {
         name: 'Employee Tracker',
-        category: 'portfolio',
-        link:'https://github.com/haleytelega/Employee-Tracker'
+        category: 'portfolio'
+        // link:'https://github.com/haleytelega/Employee-Tracker'
     },
     {
         name: 'Tech Blog',
-        category: 'portfolio',
-        link:'https://haleys-tech-blog.herokuapp.com/'
+        category: 'portfolio'
+        // link:'https://haleys-tech-blog.herokuapp.com/'
     }
     ]);
 
@@ -43,7 +43,7 @@ const ProjectList = ({ category, link }) => {
             <div className="flex-row">
                 {currentPhotos.map((image, i ) => (
                     <ProjectNames key={image.name} 
-                    img={image} i={i} category={category} repo={photos[i].link}  / >
+                    img={image} i={i} category={category} link={photos[i].link}  / >
             ))}
             </div>
         </div>
