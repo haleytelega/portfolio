@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import ProjectNames from '../ProjectNames';
 
-const ProjectList = ({ category, repo, link }) => {
+const ProjectList = ({ category, repo }) => {
     const [photos] = useState([
     {
         name: 'Weather Dashboard',
@@ -12,34 +12,39 @@ const ProjectList = ({ category, repo, link }) => {
     },
     {
         name: 'Workday Scheduler',
-        category: 'portfolio'
+        category: 'portfolio',
+        repo:'https://github.com/haleytelega/Work-Day-Scheduler-'
     },
     {
         name: 'Password Generator',
-        category: 'portfolio'
+        category: 'portfolio',
+        repo: 'https://github.com/haleytelega/Password-Generator'
     },
     {
         name: 'Note Taker',
-        category: 'portfolio'
+        category: 'portfolio',
+        repo: 'https://github.com/haleytelega/Note-Taker'
     },
     {
         name: 'Employee Tracker',
-        category: 'portfolio'
+        category: 'portfolio',
+        repo:'https://github.com/haleytelega/Employee-Tracker'
     },
     {
         name: 'Tech Blog',
-        category: 'portfolio'
+        category: 'portfolio',
+        repo:'https://github.com/haleytelega/Tech-Blog'
     }
     ]);
 
-    const currentPhotos = photos.filter(photo => photo.category === category && photo.repo === repo && photo.link === link);
-
+    const currentPhotos = photos.filter(photo => photo.category === category && photo.repo === repo);
+    
     return (
         <div>
             <div className="flex-row">
-                {currentPhotos.map((image, i, repo ) => (
+                {currentPhotos.map((image, i ) => (
                     <ProjectNames key={image.name} 
-                    img={image} i={i} category={category} repo={repo} link={link} / >
+                    img={image} i={i} category={category} repo={photos[i].repo}  / >
             ))}
             </div>
         </div>
