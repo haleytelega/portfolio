@@ -93,7 +93,7 @@ a {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
-  color: white;
+  color: var(--light);
 }
 
 a:hover {
