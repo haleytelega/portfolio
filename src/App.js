@@ -16,6 +16,10 @@ function App() {
 
   const [contactSelected, setContactSelected] = useState(false);
 
+  const dir = {
+    name: 'contact',
+    componenet:' Contact'
+  }
   return (
     <div className="App">
       <header>

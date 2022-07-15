@@ -7,7 +7,7 @@ function Gallery(props) {
         return (
             <section>
                 <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-            <Project category={currentCategory.name} />
+            <Project category={currentCategory.name} link={currentCategory.link} />
             </section>
     );
 }
