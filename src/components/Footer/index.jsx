@@ -9,7 +9,7 @@ function Footer () {
             <img style={{ width: "5%" }}
             src={require(`../../assets/footer/0.jpg`).default}
             alt={'GitHub logo'}
-            className="img-thumbnail mx-1"
+            className="footer-img"
             key={'GitHub logo'}
             />
             </a>
