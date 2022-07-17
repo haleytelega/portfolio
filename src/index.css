@@ -55,6 +55,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  margin: 5px 0;
 }
 
 h4:hover {
@@ -82,9 +83,7 @@ a {
 
 .resume {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  color: var(--dark);
+  color: var(--light);
 }
 
 a:hover {
@@ -171,7 +170,7 @@ li {
 
 nav a:hover {
   text-decoration: none;
-  color:  var(--primary);
+  color:  var(--dark);
 }
 
 nav li {
@@ -198,10 +197,44 @@ textarea {
   margin-right: auto;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-space-between-lg {
+  justify-content: space-between;
+}
+
+.min-100-vh {
+  min-height: 100vh;
+}
+
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 }
 
 .hover {
