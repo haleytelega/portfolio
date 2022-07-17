@@ -344,17 +344,22 @@ textarea {
 
 .portfolio_container-name {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: 100%;
+  margin-right: 200%;
+  font-family: 'Roboto', sans-serif;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  text-decoration: none;
 }
 
+.portfolio_container-name:hover {
+  color: var(--primary);
+}
 .portfolio_container-repo {
   color: white;
 }
@@ -369,6 +374,7 @@ button {
   font-weight: 600;
   margin-bottom: 30px;
   padding: 10px 15px;
+  
 }
 
 a {
