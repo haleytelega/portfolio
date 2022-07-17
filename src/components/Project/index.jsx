@@ -36,7 +36,6 @@ const ProjectList = ({ category, link }) => {
     }
     ]);
 
-    // const currentPhotos = photos.filter(photo => photo.category === category);
 
     return (
         <div>
