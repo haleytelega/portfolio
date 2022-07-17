@@ -36,7 +36,6 @@ const ProjectList = ({ category, link }) => {
     }
     ]);
 
-
     return (
         <div>
             <div className="flex-row">
