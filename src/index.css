@@ -73,6 +73,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  text-align: right;
 }
 
 a {
@@ -140,6 +141,17 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.Haley {
+  border-radius: 50%;
+  position: relative;
+}
+
+#about {
+  text-align: right;
+  position:relative; 
+  top:2px; 
 }
 
 span[role='img'] {
