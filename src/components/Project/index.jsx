@@ -1,6 +1,8 @@
 
 import React, { useState } from 'react';
 import ProjectNames from '../ProjectNames';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 const ProjectList = ({ category, link }) => {
     const [photos] = useState([
@@ -38,12 +40,16 @@ const ProjectList = ({ category, link }) => {
 
     return (
         <div>
+            <Container>
             <div className="flex-row">
+                <Row>
                 {photos.map((image, i ) => (
                     <ProjectNames key={image.name} 
                     img={image} i={i} category="portfolio" link={photos[i].link}  / >
             ))}
+            </Row>
             </div>
+            </Container>
         </div>
     );
 };
