@@ -6,7 +6,7 @@ function ProjectNames( item ) {
     const { img, i, category, link } = item;
     return (
         <>
-        <Col>
+        <Col md={4}>
         <div className="portfolio_container">
             <div className="portfolio_container-info">
                 <a className="portfolio_container-name" href={link} target="_blank" rel="noreferrer">{img.name}</a>
