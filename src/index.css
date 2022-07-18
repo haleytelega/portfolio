@@ -161,6 +161,14 @@ img {
   margin-right: 30%;
 }
 
+.aboutme {
+  margin-right: 20px;
+}
+
+.portfolio {
+  margin-right: 20px;
+}
+
 span[role='img'] {
   cursor: default;
 }
