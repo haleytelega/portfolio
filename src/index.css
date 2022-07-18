@@ -333,12 +333,14 @@ textarea {
   width:300px;
   height: 200px;
   margin-bottom: 50px;
+  border-radius: 20%;
 }
 
 .portfolio_container:hover .portfolio_container-info{
   opacity: 1;
   width:300px;
   height: 200px;
+
 }
 
 .portfolio_container-info {
@@ -347,6 +349,7 @@ textarea {
   width: 100%;
   opacity: 0;
   background-color: black;
+  border-radius: 20%;
 }
 
 .portfolio_container-name {
