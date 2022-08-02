@@ -6,7 +6,7 @@ main {
 :root {
   --primary: #8c54ff;
   --secondary: #f3a847;
-  --tertiary: #b12704;
+  --tertiary: gray;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
@@ -35,7 +35,7 @@ body {
   background: var(--light);
   color: var(--dark);
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 5px 0;
   line-height: 1.25;
@@ -52,15 +52,15 @@ h2 {
 h3 {
   font-size: 1.75rem;
 }
-
+/* 
 h4 {
   font-size: 1.5rem;
   margin: 5px 0;
-}
+} */
 
-h4:hover {
-  color: var(--dark)
-}
+/* h4:hover {
+  color: var(--tertiary);
+} */
 
 h5 {
   font-size: 1.25rem;
@@ -85,16 +85,24 @@ a {
 .resume {
   text-decoration: none;
   color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 a:hover {
   text-decoration: none;
-  color: black;
+  color: var(--tertiary);
 }
 
 header {
-  background:  var(--primary);
+  background:  var(--dark);
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 header a {
@@ -102,26 +110,30 @@ header a {
   text-decoration: none;
 }
 
-header:hover {
-  color: black;
-}
 
 .header{
   text-align: center;
+  margin-top: 20px;
 }
 
-.footer {
-  border-top-style: solid;
+.header:hover {
+  color: var(--tertiary);
 }
 
-.footer-img {
+.footer-img1 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin-left: 90%;
+  box-shadow: 10px 10px 5px black;
 }
 
-button {
+.footer-img2 {
+  display: block;
+  margin-right: 90%;
+  margin-top: 15px;
+  box-shadow: 10px 10px 5px #034f84;
+}
+
+/* button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
@@ -131,16 +143,16 @@ button {
   cursor: pointer;
   margin: 0 1px;
   background-color: var(--secondary);
-}
+} */
 
-button:hover {
+/* button:hover {
   opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
   opacity: 0.8;
-}
+} */
 
 img {
   max-width: 100%;
@@ -184,6 +196,10 @@ img {
 }
 .aboutme {
   margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .aboutHaley {
@@ -198,6 +214,10 @@ img {
 
 .portfolio {
   margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 span[role='img'] {
@@ -217,10 +237,10 @@ input {
   transition: box-shadow 0.2s;
 }
 
-input:focus {
+/* input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
-}
+} */
 
 li {
   list-style: none;
@@ -228,17 +248,19 @@ li {
 
 nav a:hover {
   text-decoration: none;
-  color:  var(--dark);
+  color: var(--tertiary);
 }
 
 nav li {
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav {
   text-decoration: none;
   color: black;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 textarea {
@@ -399,14 +421,14 @@ textarea {
 }
 
 .portfolio_container-name:hover {
-  color: var(--primary);
+  color: var(--tertiary);
 }
 .portfolio_container-repo {
   color: white;
 }
 
 button {
-  background: var(--primary);
+  background: var(--tertiary);
   border: 0;
   border-radius: 5px;
   color: #fff;
