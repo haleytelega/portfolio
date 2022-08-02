@@ -17,8 +17,9 @@ function Projects () {
                 className="d-block w-100"
                 src={WeatherDashboard}
                 alt="Weather Dashboard"
+                width={400} height={400}
             />
-            <Carousel.Caption>
+            <Carousel.Caption className="carousel-caption">
                 <h3>Weather Dashboard</h3>
                 <a className="projects githubproject1" href="https://github.com/haleytelega/Weather-Dashboard" target="_blank" rel="noreferrer">GitHub Weather Dashboard</a>
                 <a className="projects" href="https://haleytelega.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">Deployed Link Weather Dashboard</a>
@@ -30,6 +31,7 @@ function Projects () {
                 className="d-block w-100"
                 src={WorkdayScheduler}
                 alt="Workday Scheduler"
+                width={800} height={800}
             />
 
             <Carousel.Caption>
@@ -44,6 +46,7 @@ function Projects () {
                 className="d-block w-100"
                 src={PasswordGenerator}
                 alt="Password Generator"
+                width={800} height={800}
             />
 
             <Carousel.Caption>
@@ -58,6 +61,7 @@ function Projects () {
                 className="d-block w-100"
                 src={NoteTaker}
                 alt="Note Taker"
+                width={800} height={800}
             />
 
             <Carousel.Caption>
@@ -72,6 +76,7 @@ function Projects () {
                 className="d-block w-100"
                 src={EmployeeTracker}
                 alt="Employee Tracker"
+                width={800} height={800}
             />
 
             <Carousel.Caption>
@@ -85,6 +90,7 @@ function Projects () {
                 className="d-block w-100"
                 src={TechBlog}
                 alt="Tech Blog"
+                width={800} height={800}
             />
 
             <Carousel.Caption>

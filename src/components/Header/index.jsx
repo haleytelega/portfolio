@@ -13,7 +13,8 @@ function Header() {
         </h2>
         <nav>
             <Link className="aboutme" to="/About"> About Me</Link>
-            <Link className="portfolio" to="/Portfolio"> Portfolio</Link>
+            <Link className="portfolio" to="/Projects"> Projects</Link>
+            <Link className="contact" to="/Contact"> Contact</Link>
             <a className="resume" href={pdf} target="_blank" rel="noreferrer">
             Resume
             </a>

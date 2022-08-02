@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import About from './components/About'
+import About from './components/About';
 import Project from './components/Project';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -21,8 +22,12 @@ function App() {
                 element={<About />} 
               />
               <Route 
-                path="/Portfolio" 
+                path="/Projects" 
                 element={<Project />} 
+              />
+              <Route 
+                path="/Contact" 
+                element={<Contact />} 
               />
             </Routes>
           </div>
