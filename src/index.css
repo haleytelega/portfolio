@@ -24,24 +24,40 @@ body {
 }
 
 h3 {
-  background:  var(--dark);
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
 }
 
-.projects {
-  background:  var(--dark);
+.deployedprojects {
   color: var(--light);
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
 }
 
-.projects:hover {
+.deployedprojects:hover {
   color: var(--tertiary);
 }
 
-.githubproject1, .githubproject2, .githubproject3, .githubproject4, .githubproject5 {
-  margin-right: 10px;
+.githubproject {
+  color: var(--light);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+
+}
+
+.githubproject:hover {
+  color: var(--tertiary);
+}
+
+.project1 {
+  background-color: var(--dark);
 }
 
 .resume {
@@ -51,6 +67,19 @@ h3 {
   font-style: italic;
   font-size: 20px;
   font-weight: normal;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: var(--dark);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: var(--dark);
 }
 
 header {
@@ -146,6 +175,13 @@ img {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
+}
+
+.projects {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
 }
 
 .portfolio {
