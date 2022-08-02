@@ -20,8 +20,8 @@ function Projects () {
             />
             <Carousel.Caption>
                 <h3>Weather Dashboard</h3>
-                <a href="https://github.com/haleytelega/Weather-Dashboard" target="_blank" rel="noreferrer">GitHub Weather Dashboard</a>
-                <a href="https://haleytelega.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">Deployed Link Weather Dashboard</a>
+                <a className="projects githubproject1" href="https://github.com/haleytelega/Weather-Dashboard" target="_blank" rel="noreferrer">GitHub Weather Dashboard</a>
+                <a className="projects" href="https://haleytelega.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">Deployed Link Weather Dashboard</a>
             </Carousel.Caption>
         </Carousel.Item>
 
@@ -34,8 +34,8 @@ function Projects () {
 
             <Carousel.Caption>
                 <h3>Workday Scheduler</h3>
-                <a href="https://github.com/haleytelega/Work-Day-Scheduler-" target="_blank" rel="noreferrer">GitHub Workday Scheduler</a>
-                <a href="https://haleytelega.github.io/Work-Day-Scheduler-/" target="_blank" rel="noreferrer">Deployed Link Workday Scheduler</a>
+                <a className="projects githubproject2" href="https://github.com/haleytelega/Work-Day-Scheduler-" target="_blank" rel="noreferrer">GitHub Workday Scheduler</a>
+                <a className="projects" href="https://haleytelega.github.io/Work-Day-Scheduler-/" target="_blank" rel="noreferrer">Deployed Link Workday Scheduler</a>
             </Carousel.Caption>
         </Carousel.Item>
 
@@ -48,8 +48,8 @@ function Projects () {
 
             <Carousel.Caption>
                 <h3>Password Generator</h3>
-                <a href="https://github.com/haleytelega/Password-Generator" target="_blank" rel="noreferrer">GitHub Password Generator</a>
-                <a href="https://haleytelega.github.io/Password-Generator/" target="_blank" rel="noreferrer">Deployed Link Password Generator</a>
+                <a className="projects githubproject3" href="https://github.com/haleytelega/Password-Generator" target="_blank" rel="noreferrer">GitHub Password Generator</a>
+                <a className="projects" href="https://haleytelega.github.io/Password-Generator/" target="_blank" rel="noreferrer">Deployed Link Password Generator</a>
             </Carousel.Caption>
         </Carousel.Item>
 
@@ -62,8 +62,8 @@ function Projects () {
 
             <Carousel.Caption>
                 <h3>Note Taker</h3>
-                <a href="https://github.com/haleytelega/Note-Taker" target="_blank" rel="noreferrer">GitHub Note Taker</a>
-                <a href="https://ht-note-taker.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Link Note Taker</a>
+                <a className="projects githubproject4" href="https://github.com/haleytelega/Note-Taker" target="_blank" rel="noreferrer">GitHub Note Taker</a>
+                <a className="projects" href="https://ht-note-taker.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Link Note Taker</a>
             </Carousel.Caption>
         </Carousel.Item>
 
@@ -76,7 +76,7 @@ function Projects () {
 
             <Carousel.Caption>
                 <h3>Employee Tracker</h3>
-                <a href="https://github.com/haleytelega/Employee-Tracker" target="_blank" rel="noreferrer">GitHub Employee Tracker</a>
+                <a className="projects" href="https://github.com/haleytelega/Employee-Tracker" target="_blank" rel="noreferrer">GitHub Employee Tracker</a>
             </Carousel.Caption>
         </Carousel.Item>
 
@@ -89,8 +89,8 @@ function Projects () {
 
             <Carousel.Caption>
                 <h3>Tech Blog</h3>
-                <a href="https://github.com/haleytelega/Tech-Blog" target="_blank" rel="noreferrer">GitHub Tech Blog</a>
-                <a href="https://github.com/haleytelega/Tech-Blog" target="_blank" rel="noreferrer">Deployed Link Tech Blog</a>
+                <a className="projects githubproject5" href="https://github.com/haleytelega/Tech-Blog" target="_blank" rel="noreferrer">GitHub Tech Blog</a>
+                <a className="projects" href="https://github.com/haleytelega/Tech-Blog" target="_blank" rel="noreferrer">Deployed Link Tech Blog</a>
             </Carousel.Caption>
         </Carousel.Item>
 
